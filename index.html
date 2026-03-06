@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ironfield FC — Local Amateur Football Club</title>
+  <meta name="description" content="Ironfield FC is a community amateur football club. Follow fixtures, results, news and more.">
+  <meta property="og:title" content="Ironfield FC">
+  <meta property="og:description" content="Your local amateur football club — fixtures, results, team news and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.svg">
+  <link rel="canonical" href="https://ironfieldfc.club/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:wght@400;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Ironfield FC Home">
+        <img src="images/logo.svg" alt="" class="nav__logo" aria-hidden="true">
+        Ironfield FC
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="pages/about.html" class="nav__link">About</a></li>
+        <li><a href="pages/team.html" class="nav__link">Team</a></li>
+        <li><a href="pages/fixtures.html" class="nav__link">Fixtures</a></li>
+        <li><a href="pages/standings.html" class="nav__link">Standings</a></li>
+        <li><a href="pages/news.html" class="nav__link">News</a></li>
+        <li><a href="pages/gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="pages/join.html" class="nav__link">Join</a></li>
+        <li><a href="pages/sponsors.html" class="nav__link">Sponsors</a></li>
+        <li><a href="pages/contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav__mobile" id="mobile-nav" role="list">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="pages/about.html" class="nav__link">About</a></li>
+      <li><a href="pages/team.html" class="nav__link">Team</a></li>
+      <li><a href="pages/fixtures.html" class="nav__link">Fixtures</a></li>
+      <li><a href="pages/standings.html" class="nav__link">Standings</a></li>
+      <li><a href="pages/news.html" class="nav__link">News</a></li>
+      <li><a href="pages/gallery.html" class="nav__link">Gallery</a></li>
+      <li><a href="pages/join.html" class="nav__link">Join</a></li>
+      <li><a href="pages/sponsors.html" class="nav__link">Sponsors</a></li>
+      <li><a href="pages/contact.html" class="nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__pitch" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Est. 1987 · District League Division 1</p>
+        <h1 class="hero__title">Iron Will.<br><em>Iron Field.</em></h1>
+        <p class="hero__lead">Your local amateur football club, rooted in the community since 1987. Cheer us on, join the squad, or just follow the journey.</p>
+
+        <!-- Next match card -->
+        <div class="next-match-card" aria-label="Next match information">
+          <div id="next-match">
+            <div class="match-meta">Loading next fixture…</div>
+          </div>
+        </div>
+
+        <div class="hero__actions">
+          <a href="pages/fixtures.html" class="btn btn--primary">View All Fixtures</a>
+          <a href="pages/join.html" class="btn btn--outline">Join the Club</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- LATEST NEWS -->
+  <section class="section" aria-labelledby="news-heading">
+    <div class="container">
+      <h2 class="section-title" id="news-heading">Latest News</h2>
+      <p class="section-subtitle">Match reports, club announcements and more</p>
+      <div id="latest-news" class="news-grid" aria-live="polite">
+        <!-- Loaded by JS -->
+        <div class="news-card skeleton" style="height:360px"></div>
+        <div class="news-card skeleton" style="height:360px"></div>
+        <div class="news-card skeleton" style="height:360px"></div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="pages/news.html" class="btn btn--green">All News &amp; Reports →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <section class="section section--dark" aria-labelledby="quicklinks-heading">
+    <div class="container">
+      <h2 class="section-title section-title--center" id="quicklinks-heading">Explore the Club</h2>
+      <p class="section-subtitle" style="text-align:center">Everything you need in one place</p>
+      <nav class="quick-links" aria-label="Quick links">
+        <a href="pages/team.html" class="quick-link">
+          <span class="quick-link__icon" aria-hidden="true">👕</span>
+          <span class="quick-link__label">The Squad</span>
+        </a>
+        <a href="pages/fixtures.html" class="quick-link">
+          <span class="quick-link__icon" aria-hidden="true">📅</span>
+          <span class="quick-link__label">Fixtures &amp; Results</span>
+        </a>
+        <a href="pages/standings.html" class="quick-link">
+          <span class="quick-link__icon" aria-hidden="true">🏆</span>
+          <span class="quick-link__label">Standings</span>
+        </a>
+        <a href="pages/gallery.html" class="quick-link">
+          <span class="quick-link__icon" aria-hidden="true">📸</span>
+          <span class="quick-link__label">Gallery</span>
+        </a>
+        <a href="pages/join.html" class="quick-link">
+          <span class="quick-link__icon" aria-hidden="true">⚽</span>
+          <span class="quick-link__label">Join Us</span>
+        </a>
+        <a href="pages/contact.html" class="quick-link">
+          <span class="quick-link__icon" aria-hidden="true">✉️</span>
+          <span class="quick-link__label">Contact</span>
+        </a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <img src="images/logo.svg" alt="Ironfield FC crest" width="44" height="44">
+            <span class="footer__brand-name">Ironfield FC</span>
+          </div>
+          <p class="footer__tagline">A community club, for the community. Founded 1987 in the heart of Ironfield.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Club</p>
+          <nav class="footer__links" aria-label="Footer club links">
+            <a href="pages/about.html" class="footer__link">About Us</a>
+            <a href="pages/team.html" class="footer__link">The Squad</a>
+            <a href="pages/fixtures.html" class="footer__link">Fixtures &amp; Results</a>
+            <a href="pages/standings.html" class="footer__link">League Table</a>
+            <a href="pages/news.html" class="footer__link">News</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__heading">Community</p>
+          <nav class="footer__links" aria-label="Footer community links">
+            <a href="pages/gallery.html" class="footer__link">Gallery</a>
+            <a href="pages/join.html" class="footer__link">Join the Club</a>
+            <a href="pages/sponsors.html" class="footer__link">Sponsors</a>
+            <a href="pages/contact.html" class="footer__link">Contact</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Ironfield FC · All rights reserved</p>
+        <p>Built with ❤️ for the community</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

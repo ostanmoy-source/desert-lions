@@ -1,0 +1,16 @@
+{
+  "name": "ironfield-fc-website",
+  "version": "1.0.0",
+  "description": "Static website for Ironfield FC local amateur football club",
+  "scripts": {
+    "dev": "npx serve . --listen 3000",
+    "build": "echo 'No build required for static site. Deploy the root folder.'",
+    "lint": "echo 'Run HTML validation with https://validator.w3.org/'",
+    "preview": "npx serve . --listen 5000"
+  },
+  "devDependencies": {
+    "serve": "^14.0.0"
+  },
+  "keywords": ["football", "soccer", "club", "amateur", "static-site"],
+  "license": "MIT"
+}
